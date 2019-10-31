@@ -34,7 +34,7 @@ class ContactList extends React.Component {
     return (
       <div>
         {users.map(user => (
-          <Contact avatar={user.avatar} name={user.name} online={user.online} />
+          <Contact key={user.avatar} avatar={user.avatar} name={user.name} online={user.online} />
         ))}
       </div>
     );
